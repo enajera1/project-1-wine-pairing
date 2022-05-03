@@ -1,0 +1,15 @@
+#modal1 {
+    height: 100%;
+}
+
+#modal-box {
+    height: 100%;
+}
+
+.buttons {
+    border-radius: 25px;
+}
+
+body {
+    background-image: url("/images/landing-background.jpg");
+}

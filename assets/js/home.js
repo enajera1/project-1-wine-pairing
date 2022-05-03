@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('hey')
+    console.log('pair buttons disabled and modal loaded')
    
     // Disables 'Pair with your ___' buttons on page load
     document.getElementById("meal-btn").disabled = true;
@@ -12,13 +12,17 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
  document.getElementById('yes-btn').addEventListener('click', event => {
-  console.log('you clicked yes')
+  document.getElementById("meal-btn").disabled = false;
+  document.getElementById("wine-btn").disabled = false;
+  console.log('you clicked yes. pair buttons enabled');
  })
 
  document.getElementById('no-btn').addEventListener('click', event => {
-   console.log('you clicked no')
- })
+   console.log('you clicked no. redirected to third party website');
+   function redirect() {
+    window.location.href="https://consumer.ftc.gov/features/we-dont-serve-teens";
+  }
+  
+  redirect();
 
- function redirect() {
-  location.replace('https://consumer.ftc.gov/features/we-dont-serve-teens');
- }
+  })
