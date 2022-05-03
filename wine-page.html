@@ -1,61 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wine Pairing</title>
-</head>
-<body>
-  
-<img src="./assets/images/santa rita.jpg">
-<img src="./assets/images/Diora1.jpg">
-
-    <button class="wine" id="Chardonnay">Chardonnay</button>
-    <button class="wine" id="Pinot">Pinot Grigio</button>
-    <button class="wine" id="Riesling">Riesling</button>
-    <button class="wine" id="Sauvignon">Sauvignon Blanc</button>
-    <button class="wine" id="Semillon">Semillon</button>
-    <button class="wine" id="Chenin">Chenin Blanc</button>
-
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <h4>Red Wine Pairing</h4>
-        <p>Choose your wine or search for your wine</p>
-        <button class="wine" id="cabernet_sauvignon">Cabernet Sauvignon</button>
-        <button class="wine" id="merlot">Merlot</button>
-        <button class="wine" id="zinfandel">Zinfandel</button>
-        <button class="wine" id="shiraz">Shiraz</button>
-        <button class="wine" id="malbec">Malbec</button>
-        <button class="wine" id="pinot_noir">Pinot Noir</button>
-        <button class="wine" id="port">Port</button>
-        <form>
-          <div class="modal-footer">
-            <label for="wine">Don't see the wine you're looking for? Try entering the name of the wine here!</label>
-            <input id="wine-seach" type="text" name="text">
-          </div>
-          <div>
-            <input type="submit" value="submit">
-          </div>
-        </form>
+    <meta charset="UTF-8" />
+    <title>Food Pairing</title>
+    <header>Food Pairing</header>
+<link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <div id="winer">
+      <div id="wines-container">
+        <div >
+          <button wine-type="Chardonnay" class="wine" >Chardonnay</button>
+          <button wine-type="Pinot Grigio" class="wine" >Pinot Grigio</button>
+          <button wine-type="Riesling" class="wine" >Riesling</button>
+          <button wine-type="Sauvignon Blanc" class="wine" >Sauvignon Blanc</button>
+          <button wine-type="Chenin Blanc" class="wine" >Chenin Blanc</button>
+        </div>
+        <div>
+          <button wine-type="cabernet_sauvignon" class="wine" >Cabernet Sauvignon</button>
+          <button wine-type="merlot" class="wine" >Merlot</button>
+          <button wine-type="zinfandel" class="wine" >Zinfandel</button>
+          <button wine-type="shiraz" class="wine" >Shiraz</button>
+          <button wine-type="malbec" class="wine" >Malbec</button>
+          <button wine-type="pinot_noir" class="wine" >Pinot Noir</button>
+          <button wine-type="port" class="wine" >Port</button>
+        </div>
+      </div>
     </div>
-    </div>
-  </body>
 
-<script src="./assets/js/wine-page.js"></script>
+    <script src="./assets/js/wine-page.js"></script>
 </html>
-        
 
-  <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
-  <!-- Modal Structure -->
-  <!-- <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div> -->
