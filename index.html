@@ -14,7 +14,7 @@
   <div id="modal1" class="modal">
     <div class="modal-content">
       <h1>Are you over the age of 21 years old?</h1>  
-      <button id="yes-btn">YES</button>
+      <button id="yes-btn" class="modal-close">YES</button>
       <button onclick="redirect()" id="no-btn">NO</button>
     </div>
   </div>
@@ -25,8 +25,12 @@
   <!--Pairing buttons-->
   <div class="container">
     <div class="row">
-      <button id="meal-btn" class="col s4 push-s1 waves-effect waves-light btn-large">Pair with your meal</button>
-      <button id="wine-btn" class="col s4 push-s3 waves-effect waves-light btn-large">Pair with your wine</button>
+      <a href="./meal-page.html">
+        <button id="meal-btn" class="col s4 push-s1 waves-effect waves-light btn-large">Pair with your meal</button>
+      </a>
+      <a href="./wine-page.html">
+        <button id="wine-btn" class="col s4 push-s3 waves-effect waves-light btn-large">Pair with your wine</button>
+      </a>
     </div>
   </div>
     <!-- Compiled and minified JavaScript -->
