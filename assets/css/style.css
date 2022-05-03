@@ -10,6 +10,7 @@
     border-radius: 25px;
 }
 
+/* Not populating on live url */
 body {
     background-image: url("/images/landing-background.jpg");
 }
