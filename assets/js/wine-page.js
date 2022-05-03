@@ -1,40 +1,20 @@
-var Chardonnay = document.getElementById("Chardonnay");
-var Pinot = document.getElementById("Pinot");
-var Riesling = document.getElementById("Riesling");
-var Sauvignon = document.getElementById("Sauvignon");
-var Semillon = document.getElementById("Semillon");
-var Chenin = document.getElementById("Chenin");
+var wineButtonsEl = document.querySelector("#winer");
+var repoContainerEl = document.querySelector('#repos-container')
+var buttonClickHandler = function (event) {
+    var wine = event.target.getAttribute('wine-type');
+  
+    if (wine) {
+      getFeaturedRepos(wine);
+  
+      repoContainerEl.textContent = '';
+    }
+  };
 
-var search = "https://api.spoonacular.com/food/wine/dishes?apiKey=17dacddd3e80476cad2abf4b81232653&wine=";
+  var getFeaturedRepos = function (wine) {
+    var apiUrl = "https://api.spoonacular.com/food/wine/dishes?apiKey=17dacddd3e80476cad2abf4b81232653&wine=" + wine;
+    fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => console.log(JSON.stringify(data)));
+};
 
-Chardonnay.addEventListener("click", function() {
-    fetch(search+"chardonnay")
-    .then(response => response.json())
-    .then(data => console.log(JSON.stringify(data)));
-    console.log("this works");
-}
-);
-Pinot.addEventListener("click",function() {
-    fetch(search+"pinot_grigio")
-    .then(response => response.json())
-    .then(data => console.log(JSON.stringify(data)));
-    console.log("this works");
-});
-Riesling.addEventListener("click",function() {
-    fetch(search+"riesling")
-    .then(response => response.json())
-    .then(data => console.log(JSON.stringify(data)));
-    console.log("this works");
-});
-Sauvignon.addEventListener("click",function() {
-    fetch(search+"sauvignon_blanc")
-    .then(response => response.json())
-    .then(data => console.log(JSON.stringify(data)));
-    console.log("this works");
-});
-Chenin.addEventListener("click",function() {
-    fetch(search+"chenin")
-    .then(response => response.json())
-    .then(data => console.log(JSON.stringify(data)));
-    console.log("this works");
-});
+wineButtonsEl.addEventListener("click",buttonClickHandler);
