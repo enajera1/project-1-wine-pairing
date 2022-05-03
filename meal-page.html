@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/meal.css" />
+  <title>Wine</title>
+</head>
+<body>
+  <main>
+    <div class="header">
+      <h1>Pairing food with wine</h1>
+      <p>Find out which wine pairs best with your favorite recipe, takeout or even dessert. Use our dish options below
+        to tell us about your meal and we will give you our expert recommendation for the 
+        perfect wine. 
+        <br>Already have a bottle of wine and need recipe inspiration?
+        <br><a href="./wine-page.html" class="wine-page" > Pair by wine</a>
+      </p>
+    </div>
+    <form action="" class="food-container">
+      <h2 id="form-header">Choose the characteristics of your food to find the perfect wines:</h2>
+      <div class="ingredients-list">
+        <input id="beef" type="button" class="ingredient" value="Beef">
+        <input id="poultry" type="button" class="ingredient" value="Poultry">
+        <input id="pork" type="button" class="ingredient" value="Pork">
+        <input id="lamb" type="button" class="ingredient" value="Lamb">
+        <input id="game" type="button" class="ingredient" value="Game">
+        <input id="shellfish" type="button" class="ingredient" value="Shellfish">
+        <input id="fish" type="button" class="ingredient" value="Fish">
+        <input id="pasta" type="button" class="ingredient" value="Pasta">
+        <input id="rice" type="button" class="ingredient"value="Rice">
+        <input id="quinoa" type="button" class="ingredient" value="Quinoa">
+        <input id="couscous" type="button" class="ingredient" value="Couscous">
+        <input id="vegetable" type="button" class="ingredient" value="Vegetable">
+        <input id="chocolate-dessert" type="button" class="ingredient" value="Chocolate Dessert">
+        <input id="fruit-dessert" type="button" class="ingredient" value="Fruit Dessert">
+        <input id="cream-dessert" type="button" class="ingredient" value="Cream Dessert">
+      </div>
+      <div class="input-area">
+      <h3>Don't see your dish?</h3>
+      <input type="text" id="food-search-input" class="inputValue" placeholder="Search your dish here">
+      <input id="input-btn" class="btn" type="button" value="Submit">
+      </div>
+    </form>
+    <div class="display">
+      <h2 class="text"></h2>
+      <img class="pic" src=""></img>
+      <h4 class="rate"></h4>
+      <p class="price"></p>
+      <p class="desc"></p>
+      <a class="link"></a>
+    </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/meal-page.js"></script>
+</body>
+</html>
