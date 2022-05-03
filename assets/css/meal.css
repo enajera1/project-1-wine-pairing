@@ -1,0 +1,54 @@
+form {
+  border: 1px solid black;
+}
+
+.wine-page {
+  font-weight: bold;
+  text-decoration: none;
+  color:blueviolet;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ingredients-list button {
+  border: none;
+  background-color: aliceblue;
+  padding: 10px 32px;
+  opacity: 0.8;
+  font-weight: bold;
+  font-size: 1.25vh;
+  border-radius: 30px;
+  box-shadow: none;
+  transition: 0.5s;
+}
+
+.ingredients-list button:hover {
+  opacity: 1;
+  background-color: rgb(0, 238, 246);
+  cursor: pointer;
+}
+
+.ingredient {
+  width: 50%;
+  margin:.5vh;
+}
+
+.input-area {
+  border: 1px solid black;
+  padding: 1vh;
+}
+
+.input-area input{
+ border-radius: 20px;
+ font-weight: bold;
+ height: 2vh;
+}
+
+.input-value {
+  display: flex;
+  justify-content: center;
+}
