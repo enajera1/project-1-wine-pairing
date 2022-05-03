@@ -4,48 +4,89 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-
-
-    <button class="wine" id="Chardonnay">Chardonnay</button>
-    <button class="wine" id="Pinot">Pinot Grigio</button>
-    <button class="wine" id="Riesling">Riesling</button>
-    <button class="wine" id="Sauvignon">Sauvignon Blanc</button>
-    <button class="wine" id="Semillon">Semillon</button>
-    <button class="wine" id="Chenin">Chenin Blanc</button>
-
-
-    <button class="wine" id="Cabinet_Sauvignon">Cabinet_Sauvignon</button>
-    <button class="wine" id="Merlot">Merlot</button>
-    <button class="wine" id="Zinfandel">Zinfandel</button>
-    <button class="wine" id="Shiraz(Syrah)">Shiraz(Syrah)</button>
-    <button class="wine" id="Malbec">Malbec</button>
-    <button class="wine" id="Pinot">Pinot</button>
-    <button class="wine" id="Port">Port</button>
-    <button class="wine" id="Red_Blend">Red Blend</button>
-  </body>
-    <meta charset="UTF-8" />
-    <title>Food Pairing</title>
-    <header>Food Pairing</header>
-<link
+  <title>Food Pairing</title>
+  <link
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
       rel="stylesheet"
     />
-    <link
+  <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    />
-    <div id="winer">
+  />
+  <link rel="stylesheet" href="./assets/css/materialize.css"/>
+  <link rel="stylesheet" href="./assets/css/materialize.min.css"/>
+</head>
+    <header>Food Pairing</header>
+    <div id="repos-container" class="list-group"></div>
+    <!-- <div id="winer">
+        White Wines
         <div id="repos-container" class="list-group"></div>
         <button wine-type="Chardonnay" class="wine" >Chardonnay</button>
         <button wine-type="Pinot Grigio" class="wine" >Pinot Grigio</button>
         <button wine-type="Riesling" class="wine" >Riesling</button>
         <button wine-type="Sauvignon Blanc" class="wine" >Sauvignon Blanc</button>
         <button wine-type="Chenin Blanc" class="wine" >Chenin Blanc</button>
+        Red Wines
+        <button class="wine" wine-type="Cabernet Sauvignon">Cabernet Sauvignon</button>
+        <button class="wine" wine-type="Merlot">Merlot</button>
+        <button class="wine" wine-type="Zinfandel">Zinfandel</button>
+        <button class="wine" wine-type="Shiraz">Shiraz(Syrah)</button>
+        <button class="wine" wine-type="Malbec">Malbec</button>
+        <button class="wine" wine-type="Pinot Noir">Pinot Noir</button>
+        <button class="wine" wine-type="Port">Port</button>
+      </div> -->
+
+       <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Red Wine</a>
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal2">White Wine</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div id= "modal-box"class="modal-content black white-text">
+      <h1 class="center-align">
+        Red Wines
+      </h1> 
+        <div class="button-box">
+          <div id="wineR">
+            <button class="wine" wine-type="Cabernet Sauvignon">Cabernet Sauvignon</button>
+            <button class="wine" wine-type="Merlot">Merlot</button>
+            <button class="wine" wine-type="Zinfandel">Zinfandel</button>
+            <button class="wine" wine-type="Shiraz">Shiraz(Syrah)</button>
+            <button class="wine" wine-type="Malbec">Malbec</button>
+            <button class="wine" wine-type="Pinot Noir">Pinot Noir</button>
+            <button class="wine" wine-type="Port">Port</button>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div id= "modal-box"class="modal-content black white-text">
+      <h1 class="center-align">
+        White Wines
+      </h1> 
+        <div class="button-box">
+          <div id="wineW">
+            <button wine-type="Chardonnay" class="wine" >Chardonnay</button>
+            <button wine-type="Pinot Grigio" class="wine" >Pinot Grigio</button>
+            <button wine-type="Riesling" class="wine" >Riesling</button>
+            <button wine-type="Sauvignon Blanc" class="wine" >Sauvignon Blanc</button>
+            <button wine-type="Chenin Blanc" class="wine" >Chenin Blanc</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
     <script src="./assets/js/wine-page.js"></script>
+    <script src="./assets/js/materialize.js"></script>
+    <script src="./assets/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.modal').modal();
+      });
+    </script>
 </html>
 
