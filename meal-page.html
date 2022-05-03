@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Wine</title>
+</head>
+<body>
+  <main>
+    <div class="header">
+      <h1>Pairing food with wine</h1>
+      <p>Find out which wine pairs best with your favorite recipe, takeout or even dessert. Use our dish options below
+        to tell us about your meal and we will give you our expert recommendation for the 
+        perfect wine. 
+        <br>Already have a bottle of wine and need recipe inspiration?
+        <br><a href="./wine-page.html" class="wine-page" > Pair by wine</a>
+      </p>
+    </div>
+    <form action="" id="food-container">
+      <h2 id="form-header">Choose the characteristics of your food to find the perfect wines</h2>
+      <ul id="ingredients">
+        <li>Beef</li>
+        <li>Poultry</li>
+        <li>Pork</li>
+        <li>Lamb</li>
+        <li>Game</li>
+        <li>Shellfish</li>
+        <li>Fish</li>
+        <li>Pasta</li>
+        <li>Rice</li>
+        <li>Quinoa</li>
+        <li>Couscous</li>
+        <li>Vegetable</li>
+        <li>Chocolate Dessert</li>
+        <li>Fruit Dessert</li>
+        <li>Cream Dessert</li>
+      </ul>
+      <h3>Don't see your dish?</h3>
+      <input type="text" id="food-search-input" class="inputValue" placeholder="Search your dish here">
+      <input id="input-btn" class="btn" type="button" value="Submit">
+    </form>
+    <div class="display">
+      <h2 class="name"></h2>
+      <img class="pic" src=""></img>
+      <h3 class="rate"></h3>
+      <p class="price"></p>
+    </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/meal-page.js"></script>
+</body>
+</html>
