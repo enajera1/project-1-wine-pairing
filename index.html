@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Wine Kitchen</title>
+</head>
+<body>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div id= "modal-box"class="modal-content black white-text">
+      <h1 class="center-align">
+        Are you over the age of 21 years old?
+      </h1> 
+      <div class="button-box">
+        <button id="yes-btn" class="buttons modal-close waves-effect waves-light btn-large green">YES</button>
+        <button onclick="redirect()" id="no-btn" class="buttons waves-effect waves-light btn-large red">NO</button>
+      </div>
+    </div>
+  </div>
+  <!--Main text-->
+  <div>
+    <h1 class="center-align">What can we help you pair with?</h1>
+  </div>
+  <!--Pairing buttons-->
+  <div class="container">
+    <div class="row">
+      <a href="./meal-page.html">
+        <button id="meal-btn" class="col s4 push-s1 waves-effect waves-light btn-large">Pair with your meal</button>
+      </a>
+      <a href="./wine-page.html">
+        <button id="wine-btn" class="col s4 push-s3 waves-effect waves-light btn-large">Pair with your wine</button>
+      </a>
+    </div>
+  </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/home.js"></script>
+</body>
+</html>
