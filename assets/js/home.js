@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Modal on page load
     var modalElem = document.querySelector('.modal');
-    var instance = M.Modal.init(modalElem, dismissible);
+    var instance = M.Modal.init(modalElem);
     instance.open();
   });
 
