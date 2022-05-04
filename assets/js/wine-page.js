@@ -19,8 +19,3 @@ var buttonClickHandler = function (event) {
 };
 
 wineButtonsEl.addEventListener("click",buttonClickHandler);
-
-
-
- 
-
