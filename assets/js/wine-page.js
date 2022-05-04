@@ -26,8 +26,15 @@ var getFeaturedRepos = function (wine) {
 
       mealText.innerHTML = text;
       mealPairings.innerHTML = pairings;
+      
+      var apiFoodUrl= "https://api.edamam.com/api/recipes/v2?type=public&q="+data["pairings"][3]+"&app_id=76f5639d&app_key=330f06ac0a98ece7a92cb8b9f5929685"
+      fetch(apiFoodUrl)
+      .then(response => response.json())
+      .then(data => {
+        var recipe = data.hits[1].recipe.url;
+        mealPairings.innerHTML = "Here's a fun recipe:" + recipe.link(recipe);
     });
-};
+})};
 
 button.addEventListener('click',function(){
   fetch("https://api.spoonacular.com/food/wine/dishes?wine="+inputValue.value+"&apiKey=17dacddd3e80476cad2abf4b81232653")
@@ -40,6 +47,14 @@ button.addEventListener('click',function(){
     mealPairings.innerHTML = pairings;
 
     inputValue.textContent='';
+
+    var apiFoodUrl= "https://api.edamam.com/api/recipes/v2?type=public&q="+data["pairings"][3]+"&app_id=76f5639d&app_key=330f06ac0a98ece7a92cb8b9f5929685"
+      fetch(apiFoodUrl)
+      .then(response => response.json())
+      .then(data => {
+        var recipe = data.hits[1].recipe.url;
+        mealPairings.innerHTML = "Here's a fun recipe:" + recipe.link(recipe);
+    });
   });
   
 });
