@@ -1,4 +1,4 @@
- header h1 {
+ header {
   background-color: rgba(67, 135, 69, 0.798);
   
 }
@@ -13,8 +13,11 @@ header p {
    color: #444;
  }
  
+ .wine-select {
+   background-color: rgba(222, 174, 127, 0.9);
+ }
  p {
-   line-height: 2rem;
+   line-height: 3rem;
  }
  
  .sidenav-trigger {
@@ -58,3 +61,11 @@ header p {
    margin: 0;
  }
  
+ footer p {
+  font-size: 45px;
+  font-weight: 500;
+ }
+
+ footer {
+   background-color: rgba(202, 71, 51, 0.9);
+ }

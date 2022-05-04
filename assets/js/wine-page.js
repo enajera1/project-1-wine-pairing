@@ -1,4 +1,3 @@
-// var instance = M.Parallax.getInstance(elem);
 var wineButtonsEl = document.querySelector("#wineR");
 var repoContainerEl = document.querySelector('#repos-container')
 var buttonClickHandler = function (event) {
@@ -17,12 +16,6 @@ var buttonClickHandler = function (event) {
     .then(response => response.json())
     .then(data => console.log((data)));
 };
-// $(document).ready(function(){
-//   $('.parallax').parallax();
-// });
-// document.addEventListener('DOMContentLoaded', function() {
-//   var elems = document.querySelectorAll('.parallax');
-//   var instances = M.Parallax.init(elems, options);
-// });
+
 
 wineButtonsEl.addEventListener("click",buttonClickHandler);
