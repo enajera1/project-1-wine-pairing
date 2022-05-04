@@ -1,4 +1,5 @@
 var wineButtonsEl = document.querySelector("#wineR");
+var wineButtonsE2 = document.querySelector("#wineW");
 var repoContainerEl = document.querySelector('#repos-container')
 var buttonClickHandler = function (event) {
     var wine = event.target.getAttribute('wine-type');
@@ -19,3 +20,4 @@ var buttonClickHandler = function (event) {
 
 
 wineButtonsEl.addEventListener("click",buttonClickHandler);
+wineButtonsE2.addEventListener("click",buttonClickHandler);
