@@ -1,21 +1,28 @@
-var wineButtonsEl = document.querySelector("#winer");
-var winePairContainerEl = document.querySelector('#wines-container')
-
+// var instance = M.Parallax.getInstance(elem);
+var wineButtonsEl = document.querySelector("#wineR");
+var repoContainerEl = document.querySelector('#repos-container')
 var buttonClickHandler = function (event) {
     var wine = event.target.getAttribute('wine-type');
   
     if (wine) {
-      getWinePair(wine);
+      getFeaturedRepos(wine);
   
-      winePairContainerEl.textContent = '';
+      repoContainerEl.textContent = " ";
     }
   };
 
-  var getWinePair = function (wine) {
+  var getFeaturedRepos = function (wine) {
     var apiUrl = "https://api.spoonacular.com/food/wine/dishes?apiKey=17dacddd3e80476cad2abf4b81232653&wine=" + wine;
     fetch(apiUrl)
     .then(response => response.json())
-    .then(data => console.log(JSON.stringify(data)));
+    .then(data => console.log((data)));
 };
+// $(document).ready(function(){
+//   $('.parallax').parallax();
+// });
+// document.addEventListener('DOMContentLoaded', function() {
+//   var elems = document.querySelectorAll('.parallax');
+//   var instances = M.Parallax.init(elems, options);
+// });
 
 wineButtonsEl.addEventListener("click",buttonClickHandler);
