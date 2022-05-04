@@ -33,8 +33,8 @@ button.addEventListener('click',function(){
 
 
     //wineName.innerHTML = pairValue;
-    wineRating.innerHTML= pairRating;
-    wineText.innerHTML = pairText;
+    wineRating.innerHTML= "Rating: " +pairRating;
+    wineText.innerHTML = "Pairs: " +pairText;
     winePic.innerHTML = pairPic;
     winePrice.innerHTML = pairPrice;
     wineLink.innerHTML = pairLink;
@@ -60,8 +60,8 @@ var getPair = function(wine) {
 
 
     //wineName.innerHTML = pairValue;
-    wineRating.innerHTML= pairRating;
-    wineText.innerHTML = pairText;
+    wineRating.innerHTML= "Rating: " +pairRating;
+    wineText.innerHTML = "Pairs: " +pairText;
     winePic.innerHTML = pairPic;
     winePrice.innerHTML = pairPrice;
     wineLink.innerHTML = pairLink;
@@ -92,8 +92,8 @@ var getButtonPair = function(buttonValue) {
     
     
         //wineName.innerHTML = pairValue;
-        wineRating.innerHTML= pairRating;
-        wineText.innerHTML = pairText;
+        wineRating.innerHTML= "Rating: " +pairRating;
+        wineText.innerHTML = "Pairs: " +pairText;
         winePic.innerHTML = pairPic;
         winePrice.innerHTML = pairPrice;
         wineLink.innerHTML = pairLink;
@@ -105,21 +105,3 @@ var getButtonPair = function(buttonValue) {
 mealButtons.addEventListener('click',buttonClickHandler)
 
 
-var getFoodList = function (ingredients) {
-// var requestFoodUrl = 
-// "https://api.spoonacular.com/food/search?apiKey=73623e9fe2b24472a4be5b28e95a5a71"
-
-//make request
-fetch("https://api.spoonacular.com/food/wine/pairing?apiKey=73623e9fe2b24472a4be5b28e95a5a71")
-.then(function(response){
-  if(response.status !==200) {
-    console.log(response.status);
-  }
-  return response.json();
-})
-.then(function(data) {
-  console.log(data);
-});
-};
-
-//getFoodList (); 
