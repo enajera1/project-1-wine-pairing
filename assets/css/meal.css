@@ -8,7 +8,6 @@
 
 
 form {
-  border: 1px solid black;
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
 }
@@ -22,7 +21,6 @@ form {
 
 .ingredients-list {
   display: block;
-  flex-direction:;
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -60,7 +58,6 @@ form {
 }
 
 .input-area {
-  border: 1px solid black;
   padding: 1vh;
 }
 #food-search-input{
@@ -74,18 +71,23 @@ form {
  font-weight: bold;
  height: 2vh;
  background-color: #f6f1ee;
+ color: var(--secondary-color);
  
 }
 
 .inputValue {
   display: flex;
   justify-content: center;
+  border-color: var(--secondary-color);
 }
 
 #input-btn {
   background-color: var(--primary-color);
   display: flex;
   justify-content: center;
+  color: var(--tertiary-color);
+  padding:10px 10px;
+  width:7vw;
 }
 
 .inputValue {
@@ -93,14 +95,14 @@ form {
 }
 
 .ingredients-list h3 {
-  border-bottom: 1.5px solid black;
   display: flex;
   justify-content: center;
   width: 50%;
 }
 
 .display {
-  border: 1px solid black;
   color:#4f1a18;
   width: 50%;
+  border: 1px solid var(--secondary-color);
+  height: 50%;
 }
