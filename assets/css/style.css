@@ -1,10 +1,40 @@
-
-#modal1 {
-    height: 100%;
+:root {
+    --primary-color: #4f1a18;
+    --secondary-color: #f6f1ee;
+    --alternate-color-1: #686852;
+    --alternate-color-2: #bc9b82;
 }
 
 #modal-box {
     height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#meal-btn {
+    height: 200px;
+    background-color: var(--alternate-color-1);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondary-color);
+    font-size: xx-large;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px black;
+}
+
+#wine-btn {
+    height: 200px;
+    background-color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondary-color);
+    font-size: xx-large;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px black;
 }
 
 .buttons {
@@ -13,5 +43,5 @@
 
 /* Not populating on live url */
 body {
-    background-image: url("/images/landing-background.jpg");
+    background-color: var(--secondary-color);
 }

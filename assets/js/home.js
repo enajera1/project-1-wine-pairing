@@ -7,9 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Modal on page load
     var modalElem = document.querySelector('.modal');
-    var instance = M.Modal.init(modalElem);
+    var instance = M.Modal.init(modalElem, dismissible);
     instance.open();
   });
+
 
  document.getElementById('yes-btn').addEventListener('click', event => {
   document.getElementById("meal-btn").disabled = false;
