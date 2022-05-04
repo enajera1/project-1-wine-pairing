@@ -12,25 +12,50 @@
 
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h1>Are you over the age of 21 years old?</h1>  
-      <button id="yes-btn" class="modal-close">YES</button>
-      <button onclick="redirect()" id="no-btn">NO</button>
+    <div id= "modal-box"class="modal-content">
+      <h1 class="center-align">
+        Are you over the age of 21 years old?
+      </h1> 
+      <div class="button-box">
+        <button id="yes-btn" class="buttons modal-close waves-effect waves-light btn-large green">YES</button>
+        <button onclick="redirect()" id="no-btn" class="buttons waves-effect waves-light btn-large red">NO</button>
+      </div>
     </div>
   </div>
   <!--Main text-->
-  <div>
-    <h1 class="center-align">What can we help you pair with?</h1>
-  </div>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><h1>Wine Kitchen</h1></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">About Us</a></li>
+        <li><a href="/">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1 class="center-align">
+    What can we help you pair with?
+  </h1>
+
   <!--Pairing buttons-->
-  <div class="container">
-    <div class="row">
-      <a href="./meal-page.html">
-        <button id="meal-btn" class="col s4 push-s1 waves-effect waves-light btn-large">Pair with your meal</button>
-      </a>
-      <a href="./wine-page.html">
-        <button id="wine-btn" class="col s4 push-s3 waves-effect waves-light btn-large">Pair with your wine</button>
-      </a>
+  <div class="main-body">  
+    <div class="container">
+      <div class="row">
+        <a href="./meal-page.html">
+          <button id="meal-btn" class="col s4 push-s1 waves-effect waves-light">Pair with your meal</button>
+        </a>
+        <a href="./wine-page.html">
+          <button id="wine-btn" class="col s4 push-s3 waves-effect waves-light">Pair with your wine</button>
+        </a>
+      </div>
+    </div>
+    <div class="about-us">
+      <h2>About Us</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id voluptatum sunt fugiat eius accusantium molestiae ab tempore autem aliquid eaque minus deserunt culpa distinctio soluta fugit quo nisi dignissimos laborum, a labore! Assumenda, repudiandae placeat animi odit non quod veniam atque dignissimos vitae perferendis earum laboriosam amet soluta suscipit mollitia consectetur nesciunt quisquam officiis. Deleniti dolor esse error distinctio, modi quo. Earum aspernatur quod voluptatem magni deserunt rerum. A sunt, molestiae ipsam debitis repellendus aspernatur, provident accusamus tempora temporibus sed dolores delectus mollitia ullam hic nostrum unde, nulla qui aliquid! Aspernatur suscipit nihil molestias perferendis maxime iusto asperiores culpa voluptatum.</p>
+    </div>
+    <div>
+      <h2>Contact Us</h2>
+      <p>512.999.9999</p>
     </div>
   </div>
     <!-- Compiled and minified JavaScript -->
