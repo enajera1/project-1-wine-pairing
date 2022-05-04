@@ -1,22 +1,44 @@
+:root {
+  --primary-color: #4f1a18;
+  --secondary-color: #404544;
+  --tertiary-color: #faebd9;
+  --quaternary-color: #f6f1ee;
+  background-color: #faebd9;
+}
+
+
 form {
   border: 1px solid black;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
 }
 
 .wine-page {
   font-weight: bold;
   text-decoration: none;
   color:blueviolet;
+  font-size: larger;
 }
 
 .ingredients-list {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  flex-direction:;
   justify-content: center;
   align-items: center;
+  width: 50%;
+}
+
+.food-container {
+  display: flex;
+}
+
+.section {
+  width: 100%;
 }
 .ingredients-list input{
   border: none;
-  background-color: aliceblue;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
   padding: 10px 32px;
   opacity: 0.8;
   font-weight: bold;
@@ -28,7 +50,7 @@ form {
 
 .ingredients-list input:hover {
   opacity: 1;
-  background-color: rgb(0, 238, 246);
+  background-color:var(--secondary-color);
   cursor: pointer;
 }
 
@@ -41,14 +63,44 @@ form {
   border: 1px solid black;
   padding: 1vh;
 }
+#food-search-input{
+  background-color: #f6f1ee;
+  width: 40%;
+  border: var(--secondary-color);
+}
 
 .input-area input{
  border-radius: 20px;
  font-weight: bold;
  height: 2vh;
+ background-color: #f6f1ee;
+ 
 }
 
-.input-value {
+.inputValue {
   display: flex;
   justify-content: center;
+}
+
+#input-btn {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+}
+
+.inputValue {
+  width: 50%;
+}
+
+.ingredients-list h3 {
+  border-bottom: 1.5px solid black;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.display {
+  border: 1px solid black;
+  color:#4f1a18;
+  width: 50%;
 }
