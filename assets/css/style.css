@@ -5,6 +5,42 @@
     --alternate-color-2: #bc9b82;
 }
 
+
+body {
+    background-image: url('/images/landing-background.jpg');
+}
+
+.brand-logo {
+    margin-left: 25px;
+}
+
+nav {
+    height: 150px;
+    background-color: var(--alternate-color-1);
+}
+
+nav ul {
+    margin-top: 45px;
+    margin-right: 25px;
+}
+
+nav ul li {
+    padding: 0px 10px;
+}
+
+nav ul li a {
+    padding: 10px 25px;
+    font-weight: lighter;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a:hover {
+    background: var(--secondary-color);
+    color: black;
+    border-radius: 25px;
+    text-shadow: none;
+}
+
 #modal-box {
     height: 100%;
     background-color: black;
@@ -17,6 +53,12 @@
     justify-content: center;
 }
 
+.main-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 25px;
+}
+
 #meal-btn {
     height: 200px;
     background-color: var(--alternate-color-1);
@@ -25,6 +67,7 @@
     font-size: xx-large;
     border-radius: 25px;
     box-shadow: 10px 10px 15px black;
+    margin-top: 100px;
 }
 
 #wine-btn {
@@ -35,6 +78,11 @@
     font-size: xx-large;
     border-radius: 25px;
     box-shadow: 10px 10px 15px black;
+    margin-top: 100px;
+}
+
+.about-us {
+    margin-top: 100px;
 }
 
 .buttons {
