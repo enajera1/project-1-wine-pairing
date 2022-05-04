@@ -1,5 +1,7 @@
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', loadModal)
+
+function loadModal(){
   console.log('pair buttons disabled and modal loaded')
  
   // Disables 'Pair with your ___' buttons on page load
@@ -10,10 +12,17 @@ document.addEventListener('DOMContentLoaded', function() {
   var modalElem = document.querySelector('.modal');
   var instance = M.Modal.init(modalElem);
   instance.open();
-});
+}
 
+document.addEventListener('click', event => {
+  console.log(event.target)
+  var elId = event.target.getAttribute('id')
+  console.log(elId)
 
-document.getElementById('yes-btn').addEventListener('click', event => {
+  if (elId !== 'yes-btn') {
+    loadModal();
+  }
+  
 document.getElementById("meal-btn").disabled = false;
 document.getElementById("wine-btn").disabled = false;
 console.log('you clicked yes. pair buttons enabled');
