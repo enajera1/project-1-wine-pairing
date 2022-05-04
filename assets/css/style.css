@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --primary-color: #4f1a18;
     --secondary-color: #f6f1ee;
@@ -106,3 +107,76 @@ section p {
     border-radius: 25px;
     text-shadow: none;
 }
+=======
+ header {
+  background-color: rgba(67, 135, 69, 0.798);
+  
+}
+
+header p {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+ nav ul a,
+ nav .brand-logo {
+   color: #444;
+ }
+ 
+ .wine-select {
+   background-color: rgba(222, 174, 127, 0.9);
+ }
+ p {
+   line-height: 3rem;
+ }
+ 
+ .sidenav-trigger {
+   color: #26a69a;
+ }
+ 
+ .parallax-container {
+   min-height: 380px;
+   line-height: 0;
+   height: auto;
+   color: rgba(255,255,255,.9);
+ }
+   .parallax-container .section {
+     width: 100%;
+   }
+ 
+ @media only screen and (max-width : 992px) {
+   .parallax-container .section {
+     position: absolute;
+     top: 40%;
+   }
+   #index-banner .section {
+     top: 10%;
+   }
+ }
+ 
+ @media only screen and (max-width : 600px) {
+   #index-banner .section {
+     top: 0;
+   }
+ }
+ 
+ .icon-block {
+   padding: 0 15px;
+ }
+ .icon-block .material-icons {
+   font-size: inherit;
+ }
+ 
+ footer.page-footer {
+   margin: 0;
+ }
+ 
+ footer p {
+  font-size: 45px;
+  font-weight: 500;
+ }
+
+ footer {
+   background-color: rgba(202, 71, 51, 0.9);
+ }
+>>>>>>> develop/red-wine
