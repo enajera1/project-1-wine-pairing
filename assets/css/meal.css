@@ -6,6 +6,17 @@
   background-color: #faebd9;
 }
 
+#hero {
+  background-image: url("../images/meal-page-hero.jpg");
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  position: 100%;
+  background-position: 50%;
+  background-attachment: fixed;
+  background-position: 090%;
+  z-index: 9999;
+}
 
 form {
   background-color: var(--tertiary-color);
@@ -64,6 +75,7 @@ form {
   background-color: #f6f1ee;
   width: 40%;
   border: var(--secondary-color);
+  font-size: 12px;
 }
 
 .input-area input{
@@ -79,6 +91,7 @@ form {
   display: flex;
   justify-content: center;
   border-color: var(--secondary-color);
+  
 }
 
 #input-btn {
@@ -103,6 +116,7 @@ form {
 .display {
   color:#4f1a18;
   width: 50%;
-  border: 1px solid var(--secondary-color);
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
   height: 50%;
 }
