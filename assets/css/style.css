@@ -5,12 +5,15 @@
     --alternate-color-2: #bc9b82;
 }
 
-* {
+/* * {
   margin:0;
   padding:0;
+} */
+
+h1 {
+  margin: 0;
+  padding: 0;
 }
-
-
 .pairing {
   padding: none;
   margin: none;
@@ -46,7 +49,6 @@ body {
   text-align: center;
    /* background-image: url('/images/landing-background.jpg'); */
     background-color: var(--secondary-color);
-    padding: 10px;
 }
 
 nav {

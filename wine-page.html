@@ -9,11 +9,11 @@
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <!-- <link rel="stylesheet" href="./assets/css/materialize.css"/> -->
-  <!-- <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css" media="screen,projection"/> -->
-  <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- <link rel="stylesheet" href="./assets/css/materialize.css"/>
+  <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
     <header class="pairing">
       <h1>Food Pairing</h1>
@@ -95,16 +95,29 @@
       <img src="./assets/images/wine bg.jpg" alt="diner and wine">
     </div>
   </div>
-  <footer>
-    <p>
-      I already have my meal, I need to pair a wine with my meal.
-    </p>
 
+  <h2 class="subtitle">
+    <span id="repo-search-term"></span>
+  </h2>
+  <div id="repos-container" class="list-group"></div>
+
+  <footer>
+      <div class="input-area">
+        <h3>Don't see what you're looking for? Try our custom search.</h3>
+        <input type="text" id="food-search-input" class="inputValue" placeholder="Search your wine type here">
+        <input id="input-btn" class="btn" type="button" value="Get my pairings">
+        </div>
+        <div class="display">
+          <h2 class="text"></h2>
+          <h4 class="pairings"></h4>
+        </div>
+        <br>Already have a bottle of wine and need recipe inspiration?
+        <br><a href="./meal-page.html" class="meal-page" > Pair by meal</a>
   </footer>
 
     <script src="./assets/js/wine-page.js"></script>
-    <!-- <script src="./assets/js/materialize.js"></script>
-    <script src="./assets/js/materialize.min.js"></script> -->
+    <script src="./assets/js/materialize.js"></script>
+    <script src="./assets/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
