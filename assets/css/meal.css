@@ -6,6 +6,17 @@
   background-color: #faebd9;
 }
 
+#hero {
+  background-image: url("../images/meal-page-hero.jpg");
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  position: 100%;
+  background-position: 50%;
+  background-attachment: fixed;
+  background-position: 090%;
+  z-index: 9999;
+}
 
 form {
   background-color: var(--tertiary-color);
