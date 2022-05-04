@@ -40,7 +40,7 @@ button.addEventListener('click',function(){
     wineLink.innerHTML = pairLink;
     wineDesc.innerHTML = pairDesc;
 
-    console.log('hello')
+    inputValue.textContent='';
   })
   
 });
@@ -106,11 +106,11 @@ mealButtons.addEventListener('click',buttonClickHandler)
 
 
 var getFoodList = function (ingredients) {
-var requestFoodUrl = 
-"https://api.spoonacular.com/food/search?apiKey=73623e9fe2b24472a4be5b28e95a5a71"
+// var requestFoodUrl = 
+// "https://api.spoonacular.com/food/search?apiKey=73623e9fe2b24472a4be5b28e95a5a71"
 
 //make request
-fetch(apiFoodUrl)
+fetch("https://api.spoonacular.com/food/wine/pairing?apiKey=73623e9fe2b24472a4be5b28e95a5a71")
 .then(function(response){
   if(response.status !==200) {
     console.log(response.status);
