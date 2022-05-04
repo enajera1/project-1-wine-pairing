@@ -17,9 +17,4 @@ var buttonClickHandler = function (event) {
     .then(data => console.log((data)));
 };
 
-<<<<<<< HEAD
 wineButtonsEl.addEventListener("click",buttonClickHandler);
-=======
-
-wineButtonsEl.addEventListener("click",buttonClickHandler);
->>>>>>> develop/red-wine
