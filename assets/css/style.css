@@ -5,9 +5,42 @@
     --alternate-color-2: #bc9b82;
 }
 
+.pairing {
+  padding: none;
+  margin: none;
+  height: 350px;
+}
+
+header {
+  text-align: center;
+  background-color: var(--alternate-color-1);
+  padding: none;
+  margin: none;
+}
+
+header h1 {
+  font-weight: 700;
+  text-align: center;
+  padding: none;
+  margin: none;
+}
+
+header p {
+  padding: 25px;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+
 body {
+<<<<<<< HEAD
     background-image: url('/images/landing-background.jpg');
     /* background-color: var(--secondary-color); */
+=======
+   /* background-image: url('/images/landing-background.jpg'); */
+    background-color: var(--secondary-color);
+    padding: 10px;
+>>>>>>> 5c5ec174d9e60264a1639ff5ecf77a230256f43e
 }
 
 nav {
@@ -43,6 +76,17 @@ nav ul li a:hover {
     text-shadow: none;
 }
 
+.wine-select {
+  background-color: var(--alternate-color-2);
+  padding: 10px;
+}
+
+.wine-select h2 {
+  text-align: center;
+  padding: none;
+  margin: none;
+  background-color: var(--alternate-color-2);
+}
 section h2 {
     border-bottom: 2px solid var(--alternate-color-1);
     padding: 0px 0px 10px 0px;
@@ -111,4 +155,11 @@ section p {
     color: black;
     border-radius: 25px;
     text-shadow: none;
+}
+
+footer p {
+  font-size: 35px;
+  font-weight: 500;
+  background-color: var(--secondary-color);
+  text-align: center;
 }
