@@ -1,66 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Wine Kitchen</title>
-</head>
-<body>
 
-  <!-- Modal Structure -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Wine Kitchen</title>
+</head>
+
+<body>
+  <!--Modal Structure -->
   <div id="modal1" class="modal">
-    <div id= "modal-box"class="modal-content">
+    <div id="modal-box" class="modal-content">
       <h1 class="center-align">
         Are you over the age of 21 years old?
-      </h1> 
+      </h1>
       <div class="button-box">
         <button id="yes-btn" class="buttons modal-close waves-effect waves-light btn-large green">YES</button>
         <button onclick="redirect()" id="no-btn" class="buttons waves-effect waves-light btn-large red">NO</button>
       </div>
     </div>
   </div>
-  <!--Main text-->
+  <!--Nav Bar-->
   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo"><h1>Wine Kitchen</h1></a>
+      <a href="#" class="brand-logo">
+        <h1>Wine Kitchen</h1>
+      </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="/">About Us</a></li>
         <li><a href="/">Contact Us</a></li>
       </ul>
     </div>
   </nav>
-
-  <h1 class="center-align">
-    What can we help you pair with?
-  </h1>
-
-  <!--Pairing buttons-->
-  <div class="main-body">  
-    <div class="container">
-      <div class="row">
-        <a href="./meal-page.html">
-          <button id="meal-btn" class="col s4 push-s1 waves-effect waves-light">Pair with your meal</button>
-        </a>
-        <a href="./wine-page.html">
-          <button id="wine-btn" class="col s4 push-s3 waves-effect waves-light">Pair with your wine</button>
-        </a>
+  <!--Main Body-->
+  <!--About Us Section-->
+  <main>
+    <div class="divider"></div>
+    <section class="section main-body">
+      <h2 class="titles center-align">About Us</h2>
+      <p>Wine Kitchen strives to serve everyone in and out of the kitchen. Whether you're a food junkie, a wine snob
+        from Napa Valley, or don't know the difference between a rose and a Rosé, we can help you find the perfect
+        match between your meal and an amazing bottle of wine! Here's how it works - if you already have a meal in
+        mind but don't know what wine to pair it with, click on the "Pair with my meal" button. If you have a bottle
+        of wine but don't know what food to make with it, click on the "Pair with my wine" button. If for any reason
+        you need to get ahold of us, you can find our information in the "Contact Us" section at the bottom of the
+        page.</p>
+    </section>
+    <!--Pairing Section-->
+    <div class="divider"></div>
+    <section class="section main-body">
+      <h2 class="titles center-align">What can we help you pair with?</h2>
+      <div>
+          <div class="row center-align">
+            <a href="./meal-page.html">
+              <button id="meal-btn" class="pair-btn col s3 push-s2 waves-effect waves-light">Pair with your meal</button>
+            </a>
+            <a href="./wine-page.html">
+              <button id="wine-btn" class="pair-btn col s3 push-s4 waves-effect waves-light">Pair with your wine</button>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="about-us">
-      <h2>About Us</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id voluptatum sunt fugiat eius accusantium molestiae ab tempore autem aliquid eaque minus deserunt culpa distinctio soluta fugit quo nisi dignissimos laborum, a labore! Assumenda, repudiandae placeat animi odit non quod veniam atque dignissimos vitae perferendis earum laboriosam amet soluta suscipit mollitia consectetur nesciunt quisquam officiis. Deleniti dolor esse error distinctio, modi quo. Earum aspernatur quod voluptatem magni deserunt rerum. A sunt, molestiae ipsam debitis repellendus aspernatur, provident accusamus tempora temporibus sed dolores delectus mollitia ullam hic nostrum unde, nulla qui aliquid! Aspernatur suscipit nihil molestias perferendis maxime iusto asperiores culpa voluptatum.</p>
-    </div>
-    <div>
-      <h2>Contact Us</h2>
-      <p>512.999.9999</p>
-    </div>
-  </div>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./assets/js/home.js"></script>
+    </section>
+    <!--Contact Us Section-->
+    <div class="divider"></div>
+    <section class="section main-body">
+      <h2 class="titles center-align">Contact Us</h2>
+      <div class="row center-align">
+        <p>(512)999-9999</p>
+        <p>example@example.com</p>
+      </div>
+    </section>
+  </main>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/home.js"></script>
 </body>
+
 </html>
+
+
+
+
+<!-- col s4 push-s1 
+col s4 push-s3 -->

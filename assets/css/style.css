@@ -5,18 +5,19 @@
     --alternate-color-2: #bc9b82;
 }
 
-
 body {
-    background-image: url('/images/landing-background.jpg');
-}
-
-.brand-logo {
-    margin-left: 25px;
+   /* background-image: url('/images/landing-background.jpg'); */
+    background-color: var(--secondary-color);
 }
 
 nav {
     height: 150px;
     background-color: var(--alternate-color-1);
+}
+
+nav h1 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 nav ul {
@@ -29,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-    padding: 10px 25px;
+    padding: 0px 25px;
     font-weight: lighter;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -41,10 +42,32 @@ nav ul li a:hover {
     text-shadow: none;
 }
 
-#modal-box {
-    height: 100%;
-    background-color: black;
-    color: white;
+section h2 {
+    border-bottom: 2px solid var(--alternate-color-1);
+    padding: 0px 0px 10px 0px;
+    margin: auto;
+    font-weight: bold;
+}
+
+section p {
+    color: black;
+}
+
+.section {
+    padding-top: 25px;
+    color: var(--alternate-color-1);
+}
+
+.about-us {
+    margin-top: 100px;
+}
+
+.brand-logo {
+    margin-left: 25px;
+}
+
+.modal-btn {
+    border-radius: 25px;
 }
 
 .button-box {
@@ -59,18 +82,13 @@ nav ul li a:hover {
     margin: 0px 25px;
 }
 
-#meal-btn {
-    height: 200px;
-    background-color: var(--alternate-color-1);
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--secondary-color);
-    font-size: xx-large;
-    border-radius: 25px;
-    box-shadow: 10px 10px 15px black;
-    margin-top: 100px;
+#modal-box {
+    height: 100%;
+    background-color: black;
+    color: white;
 }
 
-#wine-btn {
+.pair-btn {
     height: 200px;
     background-color: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
@@ -79,17 +97,11 @@ nav ul li a:hover {
     border-radius: 25px;
     box-shadow: 10px 10px 15px black;
     margin-top: 100px;
+    padding: 50px;
 }
 
-.about-us {
-    margin-top: 100px;
-}
-
-.buttons {
+.pair-btn:hover {
+    background: var(--alternate-color-2);
+    color: black;
     border-radius: 25px;
-}
-
-/* Not populating on live url */
-body {
-    background-color: var(--secondary-color);
-}
+    text-shadow: none;
