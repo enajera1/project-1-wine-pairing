@@ -50,6 +50,10 @@ body {
     background-color: var(--secondary-color);
 }
 
+.nav-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
 nav {
     height: 150px;
     background-color: var(--alternate-color-1);
@@ -169,4 +173,9 @@ footer p {
   font-weight: 500;
   background-color: var(--secondary-color);
   text-align: center;
+}
+
+img[alt="minipic"] {
+  max-width: 50px;
+  display: block;
 }
