@@ -1,7 +1,7 @@
 :root {
     --primary-color: #4f1a18;
     --secondary-color: #f6f1ee;
-    --alternate-color-1: #686852;
+    --alternate-color-1: #49493a;
     --alternate-color-2: #bc9b82;
 }
 
@@ -73,6 +73,7 @@ nav ul li a {
     padding: 0px 25px;
     font-weight: lighter;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
 }
 
 nav ul li a:hover {
@@ -125,6 +126,11 @@ section p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.logo-img {
+    opacity: 0.2;
+    z-index: -1;
 }
 
 .main-body {
