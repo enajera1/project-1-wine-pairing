@@ -33,14 +33,8 @@ header p {
 }
 
 body {
-<<<<<<< HEAD
-    background-image: url('/images/landing-background.jpg');
-    /* background-color: var(--secondary-color); */
-=======
-   /* background-image: url('/images/landing-background.jpg'); */
     background-color: var(--secondary-color);
     padding: 10px;
->>>>>>> 5c5ec174d9e60264a1639ff5ecf77a230256f43e
 }
 
 nav {
