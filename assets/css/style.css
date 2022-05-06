@@ -1,7 +1,7 @@
 :root {
     --primary-color: #4f1a18;
     --secondary-color: #f6f1ee;
-    --alternate-color-1: #49493a;
+    --alternate-color-1: #49493ad9;
     --alternate-color-2: #bc9b82;
 }
 
@@ -13,6 +13,9 @@
 h1 {
   margin: 0;
   padding: 0;
+  color: var(--alternate-color-2 );
+  text-shadow: 5px 7px 10px black;
+  font-family: serif;
 }
 .pairing {
   padding: none;
@@ -22,8 +25,10 @@ h1 {
 header {
   text-align: center;
   background-color: var(--alternate-color-1);
-  padding: none;
-  margin: none;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 15px;
+  box-shadow: 10px 12px 20px;
 }
 
 header h1 {
@@ -89,7 +94,10 @@ nav ul li a:hover {
 
 .wine-select {
   background-color: var(--alternate-color-2);
-  padding: 10px;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 15px;
+  box-shadow: 10px 12px 20px;
 }
 
 .wine-select h2 {
@@ -97,6 +105,21 @@ nav ul li a:hover {
   padding: none;
   margin: none;
   background-color: var(--alternate-color-2);
+}
+.list-group {
+  padding: 3%;
+  margin: 5%;
+}
+
+.list-group a {
+  margin: 2%;
+  border-radius: 5px;
+  box-shadow: 10px 12px 20px;
+}
+
+.list-group img {
+  max-width: 15%; 
+  border-radius: 15px;
 }
 section h2 {
     border-bottom: 2px solid var(--alternate-color-1);
@@ -137,6 +160,20 @@ section p {
     z-index: -1;
 }
 
+.reason {
+  justify-content: center;
+  background-color: var(--secondary-color);
+}
+.reason p {
+  background-color: var(--alternate-color-2);
+  font-size: x-large;
+  font-weight: bold;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 15px;
+  box-shadow: 10px 12px 20px;
+}
+
 .main-body {
     display: flex;
     flex-direction: column;
@@ -173,9 +210,4 @@ footer p {
   font-weight: 500;
   background-color: var(--secondary-color);
   text-align: center;
-}
-
-img[alt="minipic"] {
-  max-width: 50px;
-  display: block;
 }

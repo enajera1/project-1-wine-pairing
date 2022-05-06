@@ -32,6 +32,14 @@ Wine Kitchen is a place you can go to pair a wine with your meal or pair a meal 
 
 - https://www.edamam.com/?gclid=CjwKCAjw682TBhATEiwA9crl35L0mWw5f_cnsq9vP6Y_vUiCHBEFcl10iXwQeGaeURVRWYBRzaWpORoCHEQQAvD_BwE
 
+## Image sources
+
+VineyardGrapes - https://www.thefoxhollow.com/blog/day-tripping-to-long-island-wineries
+Wine-Pairing - https://tastychomps.com/2017/03/the-worlds-largest-wine-dinner-at-carrabbas.html
+wine bg - https://la.eater.com/maps/best-wine-bars-los-angeles
+santa rita - https://drizly.com/wine/red-wine/cabernet-sauvignon/santa-rita-reserva-cabernet-sauvignon/p13788
+Diora1 - https://www.luekensliquors.com/product/diora-la-splendeur-du-soleil-chardonnay-750ml/
+
 ## Contributors
 
 * Alex Scott
