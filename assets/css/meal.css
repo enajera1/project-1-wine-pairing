@@ -11,11 +11,25 @@
   padding:0;
 }
 
+.logo-img {
+  height: 6vh;
+  width: 19vw;
+  background-color: var(--tertiary-color);
+  border: 3px solid var(--primary-color);
+}
+
+.home-line {
+  display: flex;
+  background-color: var(--primary-color);
+}
+
 h1 {
   background-color: var(--primary-color);
   color: var(--tertiary-color);
   height: 4vh;
   width:100vw;
+  text-align: center;
+  padding-top: 2%;
 }
 
 #hero {
@@ -138,5 +152,12 @@ form {
   padding-top: 3vh;
   text-align: center;
   font-size: large;
+}
 
+.price {
+  font-size: larger;
+}
+.link {
+  font-size:larger;
+  font-weight: bold;
 }

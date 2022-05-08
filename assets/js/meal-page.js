@@ -37,8 +37,8 @@ button.addEventListener('click',function(){
     wineRating.innerHTML= "Rating: " +pairRating;
     wineText.innerHTML = "Pairs: " +pairText;
     winePic.innerHTML = pairPic;
-    winePrice.innerHTML = pairPrice;
-    wineLink.innerHTML = pairLink;
+    winePrice.innerHTML = "Match Price: "+pairPrice;
+    wineLink.innerHTML = "Here's a link to your match: "+pairLink.link(pairLink);
     wineDesc.innerHTML = pairDesc;
 
     inputValue.textContent='';
@@ -64,8 +64,8 @@ var getPair = function(wine) {
     wineRating.innerHTML= "Rating: " +pairRating;
     wineText.innerHTML = "Pairs: " +pairText;
     winePic.innerHTML = pairPic;
-    winePrice.innerHTML = pairPrice;
-    wineLink.innerHTML = pairLink;
+    winePrice.innerHTML = "Match Price: "+pairPrice;
+    wineLink.innerHTML = "Here's a link to your match: "+pairLink.link(pairLink);
     wineDesc.innerHTML = pairDesc;
     
     console.log(data);
@@ -96,8 +96,8 @@ var getButtonPair = function(buttonValue) {
         wineRating.innerHTML= "Rating: " +pairRating;
         wineText.innerHTML = "Pairs: " +pairText;
         //winePic.innerHTML = pairPic;
-        winePrice.innerHTML = pairPrice;
-        wineLink.innerHTML = pairLink;
+        winePrice.innerHTML = "Match Price: "+pairPrice;
+        wineLink.innerHTML = "Here's a link to your match: "+pairLink.link(pairLink);
         wineDesc.innerHTML = pairDesc;
         
         
